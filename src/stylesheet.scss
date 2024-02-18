@@ -46,3 +46,121 @@ body {
 body {
   background-color: red;
 }
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  background-color: green;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .picture {
+  }
+  .about-me {
+    flex-shrink: 1;
+    background-color: blue;
+    padding: 1.5rem;
+    align-self: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      img {
+      }
+    }
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 4rem;
+  gap: 2rem;
+  background-color: blueviolet;
+  margin: 0 auto;
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    img {
+      width: 100%;
+      height: 300px;
+      background-color: yellowgreen;
+    }
+    .card-text {
+      background-color: white;
+      padding: 1rem;
+    }
+  }
+}
+footer {
+  display: flex;
+  background-color: darkmagenta;
+  .contact {
+    display: inline-block;
+    padding: 5rem 2rem 10rem 5rem;
+  }
+  .contact-photo {
+    background-color: green;
+    padding: 10rem;
+    margin: 0 auto;
+  }
+}
+// # Phone
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  #container {
+    width: 90%;
+  }
+  header {
+    flex-direction: column;
+    img {
+      margin: 0 auto;
+    }
+    p {
+    }
+  }
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    .project-card {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+// # Tablet
+@media screen and (min-width: 321px) and (max-width: 908px) {
+  header {
+    flex-direction: column;
+    img {
+      margin: 0 auto;
+    }
+  }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    .project-card {
+      img {
+        height: 200px;
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    .contact {
+      padding-bottom: 3rem;
+    }
+  }
+}

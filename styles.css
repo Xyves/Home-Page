@@ -56,6 +56,17 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+#container .main-photo {
+  position: relative;
+}
+#container .main-photo p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: rgb(255, 247, 247);
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 
 #employees {
   font-size: 2.5rem;

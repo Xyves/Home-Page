@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script defer="defer" type="module" src="/bundle.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <base href="/" />
     <title>Home Page</title>
   </head>
@@ -22,17 +23,17 @@
         <div class="about-me">
           <h2>About me</h2>
           <p>
-            Hello, world! I'm Michael Scott, regional manager extraordinaire at Dunder Mifflin's Scranton branch. Some people say I'm the best boss ever, and who am I to argue with that? I'm a visionary leader, a master of motivational speaking, and an expert in all things paper.
+            Hello, world! I'm <b>Michael Scott</b>, regional manager extraordinaire at Dunder Mifflin's Scranton branch.<br> Some people say I'm the best boss ever, and who am I to argue with that? I'm a visionary leader, a master of motivational speaking, and an expert in all things paper.
         
           </p>
           <div class="social-icons">
-            <img src="" alt="github icon" />
-            <img src="" alt="linkedin icon" />
-            <img src="" alt="twitter icon" />
+            <i class="devicon-github-original"></i>
+            <i class="devicon-linkedin-plain"></i>
+            <i class="devicon-twitter-original"></i>
           </div>
         </div>
       </header>
-      <p>Employees</p>
+      <p id="employees">Employees</p>
       <main id="projects">
         <div class="project-card">
           <img src="img/dwight.jpg" alt="" />
@@ -75,7 +76,7 @@
           <div class="card-text">
             <h3 class="project-name">Andy Bernard</h3>
             <p class="project-description">
-    Andy Bernard, the Cornell-educated salesman with a musical flair and a temper to match. From his a cappella performances to his unpredictable bouts of anger management issues, Andy brings a mix of charm and chaos to the office that keeps everyone on their toes.
+              Andy Bernard, the Cornell-educated salesman with a musical flair and a temper to match. From his a cappella performances to his unpredictable bouts of anger management issues, Andy brings a mix of charm and chaos to the office.
             </p>
           </div>
         </div>
@@ -93,7 +94,7 @@
     <footer>
       <div class="contact">
         <h3>Contact me</h4>
-        <p>
+        <p class="contact-text">
         Hey, it's your pal Michael Scott, ready to chat about anything from paper sales to our latest Dundie victories – just give me a call!
         </p>
         <p>13927 Saticoy St</p>
@@ -107,7 +108,9 @@
           <span>Michael.Scott@dundermifflin.com </span>
         </div>
       </div>
-      <div class="contact-photo"></div>
+      <div class="contact-photo">
+        <img src="./img/mug.jpg" alt="">
+      </div>
     </footer>
   </body>
 </html>

@@ -48,6 +48,9 @@ body {
   overflow-x: hidden;
 }
 
+/*=================================
+            Styling
+=================================*/
 body {
   background: linear-gradient(166deg, rgb(238, 238, 238) 43%, rgb(225, 222, 227) 44%);
 }

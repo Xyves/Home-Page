@@ -132,9 +132,9 @@ main .project-card {
   flex-grow: 1;
 }
 main .project-card img {
-  width: 100%;
   background-color: yellowgreen;
-  height: 25rem;
+  max-height: 20rem;
+  object-fit: contain;
   border: 3px solid black;
   border-bottom: none;
 }
@@ -189,7 +189,7 @@ footer .contact-photo img {
   border: 1px solid black;
 }
 
-@media screen and (min-width: 521px) and (max-width: 1200px) {
+@media screen and (min-width: 721px) and (max-width: 1200px) {
   header {
     flex-direction: column;
   }
@@ -227,7 +227,7 @@ footer .contact-photo img {
     margin-left: 5rem;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 720px) {
   html {
     font-size: 12px;
   }

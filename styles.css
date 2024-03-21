@@ -164,10 +164,13 @@ footer {
   background-color: rgba(255, 198, 180, 0.4588235294);
 }
 footer .contact {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 5rem 2rem 10rem 5rem;
   max-width: 35rem;
   color: black;
+  margin-left: 5rem;
 }
 footer .contact svg {
   width: 22px;
@@ -247,6 +250,7 @@ footer #contact-phone {
     padding: 2rem;
     max-width: 18rem;
     min-width: 1rem;
+    margin: 0;
   }
   footer .contact-photo {
     margin: 0;

@@ -161,10 +161,13 @@ footer {
   display: flex;
   background-color: #ffc6b475;
   .contact {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 5rem 2rem 10rem 5rem;
     max-width: 35rem;
     color: black;
+    margin-left: 5rem;
     svg {
       width: 22px;
       height: 22px;
@@ -250,6 +253,7 @@ footer {
       padding: 2rem;
       max-width: 18rem;
       min-width: 1rem;
+      margin: 0;
     }
     .contact-photo {
       margin: 0;
